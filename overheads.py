@@ -1,5 +1,3 @@
-# Assign to Earlene
-
 # contains overhead functions
 
 def overHead(csv_data):
