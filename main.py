@@ -55,7 +55,7 @@ def main():
     with write_path.open(mode="w", encoding="UTF-8", newline="") as file:
         file.write("[HIGHEST OVERHEAD] {overHead_category}: {overHead_expense}%\n".format(overHead_category = highest_overhead[0],overHead_expense = highest_overhead[1]))
         if check_coh_surplus == True:
-            file.write("[CASH SURPLUS] CASH ON EACH DAY IIS HIGHER THAN THE PREVIOUS DAY\n")
+            file.write("[CASH SURPLUS] CASH ON EACH DAY IS HIGHER THAN THE PREVIOUS DAY\n")
             file.write("[HIGHEST CASH SURPLUS] DAY: {dayNum}, AMOUNT: USD{surplusAmount}\n".format(dayNum=coh_data[0], surplusAmount=int(coh_data[1])))
         else:
             for row in coh_data:
