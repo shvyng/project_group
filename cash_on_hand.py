@@ -11,7 +11,7 @@ def coh_surplus(csv_data):
             prev_day_coh = float(row[1])
     #if the return statement was not triggered earlier it means that it is a scenario with a profit surplus
     return True
-    
+
 def calc_coh(csv_data,surpluscheck):
     coh_data = []
     if surpluscheck  == False: 
