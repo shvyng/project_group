@@ -38,8 +38,7 @@ def calc_profit_loss(csv_data,surpluscheck):
             # Remove any commas in the profit/loss data
             row[-1] = float(row[-1].replace(",",""))
             current_surplus = row[-1] - prev_day_profit
-            if current_surplus > hightest_surplus:
-                # If the current day's surplus is higher than the highest surplus found so far, update highest_surplus and highest__day
+            if current_surplus > hightest_surplus:  # If the current day's surplus is higher than the highest surplus found so far, update highest_surplus and highest__day
                 hightest_surplus = current_surplus
                 highest_day = day_no
             day_no += 1
